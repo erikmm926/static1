@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        #initialGif {
+            width: 300px;
+            height: auto;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="initialGif" src="https://giphy.com/gifs/reaction-8c9NInMpXixMjR6lTH" alt="Initial GIF">
+    <button id="navigateButton">Press Here</button>
+
+    <script>
+        document.getElementById('navigateButton').addEventListener('click', function() {
+            // Replace this URL with the actual URL of your GitHub repository
+            window.location.href = 'https://github.com/erikmm926/site2';
+        });
+    </script>
+</body>
+</html>
